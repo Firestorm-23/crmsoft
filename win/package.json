@@ -1,0 +1,57 @@
+{
+  "name": "crmsoft",
+  "version": "1.0.0",
+  "description": "CRM SOFT",
+  "main": "index.js",
+  "scripts": {
+    "nodestart": "nodemon index-node.js",
+    "start": "electron .",
+    "dist": "electron-builder",
+    "build": "electron-builder -p never",
+    "deploy": "electron-builder -p always",
+    "make": "electron-forge make",
+    "startt": "electron-forge start"
+  },
+  "author": "",
+  "license": "",
+  "devDependencies": {
+    "electron": "^13.5.2",
+    "electron-builder": "^22.14.13"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "dotenv": "^10.0.0",
+    "electron-forge": "^5.2.4",
+    "electron-updater": "^4.6.1",
+    "express": "^4.17.1",
+    "googleapis": "^39.2.0",
+    "multer": "^1.4.4",
+    "nodemailer": "^6.7.8",
+    "nodemon": "^2.0.12",
+    "puppeteer": "^12.0.1",
+    "sqlite3": "^5.0.2"
+  },
+  "build": {
+    "appId": "com.CRMSOFT.app",
+    "productName": "CRM SOFT",
+    "icon": "/img/logo.png",
+    "target": "NSIS",
+    "nsis": {
+      "allowToChangeInstallationDirectory": true,
+      "oneClick": false
+    },
+    "extraResources": [
+      "db"
+    ],
+    "publish": [
+      {
+        "provider": "github",
+        "token": "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"
+      }
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Firestorm-23/crmsoft.git"
+  }
+}

@@ -1,0 +1,4 @@
+appId: com.CRMSOFT.app
+publish:
+  provider: github
+  token: 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

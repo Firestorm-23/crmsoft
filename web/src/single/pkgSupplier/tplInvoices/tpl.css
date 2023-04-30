@@ -1,0 +1,17 @@
+.tsTbl {
+    margin: 10px;
+    font-size: 13px;
+}
+.tsTdVal {
+    text-align: left;
+    font-size: 14px;
+}
+
+.tsTdProperty{
+    text-align: right;
+}
+
+.tsInvoiceViewTable, .tsInvoiceViewTableTd, .tsInvoiceViewTableTh {
+    padding: 5px;
+    font-size: 13px;
+}

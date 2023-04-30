@@ -1,0 +1,169 @@
+{
+    "items": [
+        {
+            "id": "home",
+            "displayTxt": "Home",
+            "toolTip": "",
+            "moduleType": "home",
+            "moduleClass": "single/tsfrmHome"
+        },
+        {
+            "id": "tsparent-invoices",
+            "displayTxt": "Invoices",
+            "children": [
+                {
+                    "id": "invoice",
+                    "displayTxt": "Create Invoice",
+                    "toolTip": "This option will generate the pesticide invoice",
+                    "moduleType": "invoice",
+                    "moduleClass": "single/pkgInvoice/tsfrmInvoice"
+                },
+                {
+                    "id": "invoices-history",
+                    "displayTxt": "Invoices History",
+                    "toolTip": "This option will allow to modify, delete invoices. Here you can see invoice history.",
+                    "moduleClass": "single/pkgInvoice/tsfrmInvoicesShell"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-payments",
+            "displayTxt": "Payment Details",
+            "children": [
+                {
+                    "id": "payment-in-out",
+                    "displayTxt": "Payment Credit / Debit",
+                    "moduleClass": "single/pkgPayments/tsfrmPaymentInOut",
+                    "toolTip": ""
+                },
+                {
+                    "id": "payment-history",
+                    "displayTxt": "Payment History",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgPayments/tsfrmPaymentHistory"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-customer",
+            "displayTxt": "Customer Details",
+            "children": [
+                {
+                    "id": "customer-information",
+                    "displayTxt": "Manage Customers",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgManageCustomers/tsfrmCustomersGrid"
+                },
+                {
+                    "id": "customer-statement",
+                    "displayTxt": "Customer Statement",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgManageCustomers/tsfrmCustomerStatement"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-supplier",
+            "displayTxt": "Supplier Details",
+            "children": [
+                {
+                    "id": "supplier-invoice",
+                    "displayTxt": "Suppliers Invoice",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgSupplier/tsfrmInvoice"
+                },
+                {
+                    "id": "supplier-invoice-history",
+                    "displayTxt": "Suppliers Invoice History",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgSupplier/tsfrmInvoicesShell"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-product-details",
+            "displayTxt": "Product Details",
+            "children": [
+                {
+                    "id": "product-details",
+                    "displayTxt": "Manage Products",
+                    "toolTip": "Create, Modify, Delete products",
+                    "moduleClass": "single/pkgManageProducts/tsfrmProductsGrid"
+                },
+                {
+                    "id": "stock-report",
+                    "displayTxt": "Manage Stock",
+                    "toolTip": "Add stocks",
+                    "moduleClass": "single/pkgManageProducts/tsfrmStocksShell"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-reports",
+            "displayTxt": "Reports",
+            "children": [
+                {
+                    "id": "bill-wise-profit",
+                    "displayTxt": "Invoice-wise Income",
+                    "moduleClass": "single/pkgReports/frmBillWiseProfit"
+                },
+                {
+                    "id": "product-wise-profit-loss-report",
+                    "displayTxt": "Product-wise Income",
+                    "toolTip": "Check product-wise profit / loss report",
+                    "moduleClass": "single/pkgReports/tsfrmProductWiseProfitReport"
+                },
+                {
+                    "id": "Date-wise-profit-loss-report",
+                    "displayTxt": "Date-wise Income",
+                    "toolTip": "Check date-wise profit / loss report",
+                    "moduleClass": "single/pkgReports/tsfrmDateWiseProfitReport"
+                },
+                {
+                    "id": "sale",
+                    "displayTxt": "Productwise Sale",
+                    "toolTip": "Sale per products",
+                    "moduleClass": "single/pkgReports/tsfrmProductSaleReport"
+                },
+                {
+                    "id": "cashflow",
+                    "displayTxt": "Cashflow Report",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgReports/frmCashflowReport"
+                }
+            ]
+        },
+        {
+            "id": "tsparent-gst",
+            "displayTxt": "GST Reports",
+            "hidden": false,
+            "children": [
+                {
+                    "id": "GSTR-1",
+                    "displayTxt": "GSTR-1",
+                    "toolTip": "",
+                    "moduleClass": "single/pkgGST/frmGSTR1"
+                },
+                {
+                    "id": "GSTR-2",
+                    "hidden": true,
+                    "displayTxt": "GSTR-2",
+                    "toolTip": ""
+                },
+                {
+                    "id": "GSTR-9",
+                    "displayTxt": "GSTR-9",
+                    "hidden": true,
+                    "toolTip": ""
+                },
+                {
+                    "id": "sale-summay-by-hsn",
+                    "hidden": true,
+                    "displayTxt": "Sale Summary by HSN",
+                    "toolTip": ""
+                }
+            ]
+        }
+    ],
+    "expDate": ""
+}

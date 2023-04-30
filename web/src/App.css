@@ -1,0 +1,192 @@
+/** Common CSS **/
+
+.tsMiddle {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.tsBlueLink {
+  font-size: 13px;
+  color: blue;
+  cursor: pointer;
+}
+
+.tsBlueLink:hover {
+  color: #0099ff;
+  text-decoration: underline;
+}
+
+.tsGrayColor{
+  color: #aaa;
+}
+
+.tsHelpText {
+  font-size: 13px;
+}
+
+.tsBold{
+  font-weight: bold;
+}
+
+/* .tsAppBar {
+  background: linear-gradient(135deg, #1598CB 40%, #00437B 100%);
+  -webkit-app-region: drag;
+} */
+/* 
+.tsNonDragable{
+  -webkit-app-region: no-drag;
+} */
+
+.tsMenuIcon {
+  margin: 0 5px 0 0;
+}
+
+/**Home Page CSS**/
+
+.tsHomePg {
+  /* background: #f5f5f5; */
+  display: flex;
+  flex-flow: column;
+  height: 100vh;
+}
+
+.tsAfterHeader {
+  flex: 1;
+  display: flex;
+  flex-flow: row;
+  overflow: auto;
+}
+
+.tsMain {
+  flex: 1;
+  display: flex;
+  overflow: auto;
+}
+
+.tsOverFlowAuto {
+  overflow: auto;
+}
+
+.tsVBox {
+  display: flex;
+  flex-direction: column;
+}
+
+.tsHBox {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.tsHBoxForPrint {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+}
+
+.flex1 {
+  flex: 1;
+}
+
+.tsLink {
+  text-decoration: none;
+  color: unset;
+}
+
+/** Single Page */
+
+.tsDetailEditor {
+  margin: 0 0 0 5px;
+  background-color: white;
+}
+
+.tsGridHeader {
+  /* background-color: rgb(91, 212, 176); */
+  /* color: white; */
+  font-weight: bold;
+}
+
+.tsGridSuccessCell{
+  background-color: #cdfddf;
+}
+
+.tsGridFailureCell{
+  background-color: #ff252580;
+}
+
+/* Dialog */
+.tsDialogInnerContent {
+  width: 100vh;
+  min-height: 40vh;
+  margin: 65px 0 0 0;
+}
+
+.tsInvoiceViewDispField{
+  background-color: #eee;
+  font-size: 14px;
+  padding: 5px 10px 5px 5px;
+  width: 200px;
+  min-width: 150px;
+  text-align: end;
+}
+
+.tsInvoiceViewValField{
+  padding: 5px;
+  font-size: 14px;
+}
+
+.tsInvoiceViewBorder{
+  border-top: 7px solid #eee;
+  /* margin-right: 20px; */
+}
+
+.tsInvoiceViewTable, .tsInvoiceViewTableTd, .tsInvoiceViewTableTh {
+  border: 1px solid #eee;
+  padding: 10px;
+}
+
+.tsInvoiceViewTable {
+  width: 100%;
+  border-collapse: collapse;
+  white-space: nowrap;
+}
+
+.tsDetailEditorEditField{
+  width: 97%;
+  /* max-width: 100%; */
+  border: 1px solid #cfcfcf;
+  padding: 5px;
+}
+
+.tsCashFlowTbl{
+  margin: 10px 0 0 0;
+}
+
+.tsCashFlowTbl td{
+  padding: 5px;
+}
+
+/* Responsive layout - makes a one column layout instead of a two-column layout */
+
+@media (max-width: 400px) {
+  .tsHBox {
+    flex-direction: column;
+  }
+}
+
+.tsDialogMinWidth {
+  min-width: 700px;
+}
+
+.MuiDialogContent-root {
+  width: auto;
+}
+
+.tsRootPg {
+  /* background: #f5f5f5; */
+  display: flex;
+  flex-flow: column;
+  /* height: 100vh; */
+}
